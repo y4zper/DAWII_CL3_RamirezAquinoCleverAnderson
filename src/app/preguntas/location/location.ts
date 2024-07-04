@@ -8,6 +8,3 @@ export interface Location {
     created: string;
 }
 
-export interface LocationResponse {
-    results: Location[];
-}
