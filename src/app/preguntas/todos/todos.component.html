@@ -1,0 +1,15 @@
+<h1 class="fw-bold text-center">Lista de Id's</h1>
+
+@if (todoss.length > 0) {
+    <div class="container">
+        <ul class="list-group">
+            @for (todo of todoss; track todo.id) {
+                <li class="list-group-item">
+                    <p>
+                        {{todo.id}}.  {{ todo.title }}
+                    </p>
+                </li>
+            }
+        </ul>
+    </div>
+}
